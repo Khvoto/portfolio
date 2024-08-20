@@ -19,6 +19,11 @@ p {
   font-style: normal;
 }
 
+
+h2 {
+  font-weight: 500;
+}
+
 a {
   color: #dedede;
   text-decoration: none;
