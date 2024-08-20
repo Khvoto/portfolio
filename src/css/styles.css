@@ -164,19 +164,50 @@ body {
 * - Contact information
 */
 
+.section {
+  display: none;
+  transition: all 0.3s;
+}
+
 /* CV */
 
-.cv-content {
-  background-color: rgba(127, 153, 153, 0.445);
-  color: aliceblue;
+.section-content {
+  background-color: rgba(191, 207, 207, 0.863);
+  border-radius: 6px;
+  color: rgb(36, 39, 39);
+  display: flex;
+  gap: 20px;
   height: 80vh;
-  position: absolute;
-  padding: 20px;
-  top: 10%;
   left: 50%;
+  padding: 20px;
+  position: absolute;
+  top: 10%;
   transform: translateX(-50%);
   width: 70%;
 }
+
+.cv-columns {
+  width: 50%;
+}
+
+.cv-skills {
+  display: flex;
+  gap: 25px;
+  justify-content: start;
+  padding-top: 20px;
+  flex-wrap: wrap;
+
+  .cv-skill {
+    width: 30%;
+    
+  }
+}
+
+
+.open {
+  display: flex;
+}
+
 
 /* ## Footer container ## 
 *
@@ -204,8 +235,6 @@ footer {
   margin-bottom: 15px;
   position: relative;
 }
-
-
 
 .cc {
   font-size: 0.8rem;
