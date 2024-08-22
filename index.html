@@ -25,7 +25,7 @@
 
     <header>
       <div class="image-wrapper">
-        <img src="./src/assets/IMG_20240730_161407.jpg" alt="" class="header-image">
+        <img src="./src/assets/abisko1.jpg" alt="" class="header-image">
         <div class="image-overlay"></div>
       </div>
       <nav class="menu left">
@@ -40,25 +40,25 @@
             <li class="menu-item">
               <a href="#">
                 <span class="material-symbols-outlined">cases</span>
-                <span class="menu-item-text">Cases</span>
+                <span class="menu-item-text">Case</span>
               </a>
             </li>
             <li class="menu-item">
               <a href="#">
                 <span class="material-symbols-outlined">folder_open</span>
-                <span class="menu-item-text">Projects</span>
+                <span class="menu-item-text">Projekt</span>
               </a>
             </li>
             <li class="menu-item">
               <a href="#">
                 <span class="material-symbols-outlined">face</span>
-                <span class="menu-item-text">About</span>
+                <span class="menu-item-text">Om mig</span>
               </a>
             </li>
             <li class="menu-item">
               <a href="#">
                 <span class="material-symbols-outlined">contact_page</span>
-                <span class="menu-item-text">Contact</span>
+                <span class="menu-item-text">Kontakt</span>
               </a>
             </li>
           </ul>
@@ -90,7 +90,7 @@
     <section id="section0" class="section cv-wrapper">
       <div class="section-content">
         <div class="cv-columns">
-          <ul class="cv-work">
+          <ul id="cv-work" class="cv-work">
             <h2>Arbetserfarenheter</h2>
             <li class="cv-position">
               <h3 class="cv-title">Junior Webbutvecklare</h3>
@@ -115,10 +115,10 @@
                 </ul>
               </div>
             </li>
-            </h>
+          </ul>
         </div>
         <div class="cv-columns">
-          <div class="cv-studies">
+          <div id="cv-studies" class="cv-studies">
             <h2>Utbildningar</h2>
             <li class="cv-program">
               <h3 class="cv-title">Webbutveckling</h3>
@@ -145,6 +145,7 @@
     <section id="section1" class="section case-wrapper">
       <div class="section-content">
         <h2>Cases</h2>
+        <experience-card></experience-card>
       </div>
     </section>
 
@@ -184,30 +185,6 @@
     </footer>
   </div>
 </body>
-<script src="./src/js/main.js"></script>
+<script type="module" src="./src/js/main.js"></script>
 
 </html>
-
-
-<!-- ## Following are templates for the cv section ##
-
-      <li class="cv-work-position">
-        <h3 class="cv-title">Title</h3>
-        <h4 class="cv-workplace">Company</h4>
-        <p class="cv-duration">2021 - 2022</p>
-        <p class="cv-description">Description</p>
-      </li>
-
-      <li class="cv-studies">
-        <h3 class="cv-title">Title</h3>
-        <h4 class="cv-school">School</h4>
-        <p class="cv-duration">2021-2022</p>
-        <p class="cv-description"></p>
-        <div class="cv-skills-container">
-          <ul class="cv-skills">
-            <li class="cv-skill"></li>
-          </ul>
-        </div>
-      </li>
-
--->

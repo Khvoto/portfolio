@@ -175,7 +175,6 @@ body {
 }
 
 /* CV */
-
 .section-content {
   background-color: rgba(191, 207, 207, 0.863);
   border-radius: 6px;
@@ -195,18 +194,7 @@ body {
   width: 50%;
 }
 
-.cv-skills {
-  display: flex;
-  gap: 25px;
-  justify-content: start;
-  padding-top: 20px;
-  flex-wrap: wrap;
 
-  .cv-skill {
-    width: 30%;
-    
-  }
-}
 
 
 .open {
