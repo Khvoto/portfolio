@@ -10,18 +10,19 @@ export class CreateExperienceCard extends HTMLElement {
     super();
 
     this.data = experience;
-    console.log('FFS DATA', this.data);
 
-    const shadowRoot = this.attachShadow({ mode: "open" });
-    shadowRoot.innerHTML = `
+    const card = this.attachShadow({ mode: "open" });
+    card.innerHTML = `
       <style>
-        .cv-experience {
-          background
+        experience-card {
+        display: block;
+          height: 200px;
+          width: 325px;
         }
 
         .cv-skills {
           display: flex;
-          gap: 25px;
+          gap: 15px;
           justify-content: start;
           padding-top: 20px;
           flex-wrap: wrap;
@@ -32,31 +33,42 @@ export class CreateExperienceCard extends HTMLElement {
           }
         }
       </style>
-
-      <li class="cv-experience">
+      <experience-card class=" cv-experience exp-${this.data.id} ">
         <h3 class="cv-title">${this.data.title}</h3>
         <h4 class="cv-location">${this.data.location}</h4>
         <p class="cv-duration">${this.data.start} - ${this.data.end}</p>
         <p class="cv-description">${this.data.description}</p>
         <div class="cv-skills-container">
           <ul class="cv-skills">
+            <slot name="skill"></slot>
           </ul>
         </div>
-      </li>
+      </experience-card>
     `;
 
     const targetColumn = document.getElementById('cv-' + this.data.type);
-    targetColumn.appendChild(shadowRoot);
+    targetColumn.appendChild(card);
+  }
+
+  connectedCallback() {
+    this.fillSkills(this.data)
   }
 
 
   showData() {
-    console.log(this.data);
+    console.log('Current Data: ', this.data);
   }
 
-  fillSkills() {
-    const skillz = this.querySelector('.cv-skills');
-    console.log(skillz)
+  fillSkills(experience) {
+    setTimeout( () => {
+      console.log('this:', experience) 
+      const ffs = '.exp-' + experience.id;
+      const element = card.shadowRoot.getElementsByClassName(ffs);
+      //const skillList = element.querySelector('.cv-skills');
+
+      console.log('ffs: ', ffs)
+      
+    })
   }
 
 
