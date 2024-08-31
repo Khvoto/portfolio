@@ -29,6 +29,14 @@ menuItems.forEach((item, index) => {
     else { 
       section.classList.add('open'); 
     } // If the section was closed before, add the 'open' class to it
+
+    const visible = document.getElementsByClassName('open');
+    const mainText = document.getElementById('MainText');
+    if(visible.length === 1) { // Hide Main text if a section is opened.
+      mainText.style.opacity =  0;
+    } else { // And show it again if sections are closed.
+      mainText.style.opacity = 1;
+    }
   });
 });
 

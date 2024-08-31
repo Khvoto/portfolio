@@ -1,5 +1,7 @@
 /**
  * Create cards for each experience
+ * 
+ * This class is a wip rework for the cv section of the portfolio.
  *
  * @class CreateExperienceCard
  * @extends {HTMLElement}
@@ -34,13 +36,12 @@ export class CreateExperienceCard extends HTMLElement {
         }
       </style>
       <experience-card class=" cv-experience exp-${this.data.id} ">
-        <h3 class="cv-title">${this.data.title}</h3>
+        <h3 class="cv-title">${this.data.title}<h3>
         <h4 class="cv-location">${this.data.location}</h4>
         <p class="cv-duration">${this.data.start} - ${this.data.end}</p>
         <p class="cv-description">${this.data.description}</p>
         <div class="cv-skills-container">
           <ul class="cv-skills">
-            <slot name="skill"></slot>
           </ul>
         </div>
       </experience-card>
@@ -50,24 +51,23 @@ export class CreateExperienceCard extends HTMLElement {
     targetColumn.appendChild(card);
   }
 
-  connectedCallback() {
-    this.fillSkills(this.data)
-  }
-
-
   showData() {
     console.log('Current Data: ', this.data);
   }
 
-  fillSkills(experience) {
+  fillSkills() {
     setTimeout( () => {
       console.log('this:', experience) 
       const ffs = '.exp-' + experience.id;
       const element = card.shadowRoot.getElementsByClassName(ffs);
-      //const skillList = element.querySelector('.cv-skills');
-
-      console.log('ffs: ', ffs)
+      const skillList = element.querySelector('.cv-skills');
       
+
+      const skills = this.data.skills;
+      console.log(skills);
+      skills.forEach(skill => {
+        
+      });
     })
   }
 
