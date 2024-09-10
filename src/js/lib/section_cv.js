@@ -161,7 +161,7 @@ const prior_experience = [
     description: "Gymnasiestudier, Matematik & Data inriktning",
     skills: {
       1: "Programmering ( C++ )",
-      2: "Webdesign",
+      2: "Webbdesign",
       3: "Webbproduktion",
       4: "Engelska C",
       5: "Matematik E"
