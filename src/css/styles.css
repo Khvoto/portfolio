@@ -161,7 +161,7 @@ body {
 }
 
 /* ## Sections ## 
-* Includes styles for all sections aswell as specific rules for the following different sections:
+* Includes styles for all sections as well as specific rules for the following different sections:
 * - CV
 * - Cases
 * - Projects
@@ -179,6 +179,7 @@ body {
   border-radius: 6px;
   color: rgb(36, 39, 39);
   display: flex;
+  flex-direction: column;
   gap: 20px;
   height: 80vh;
   left: 50%;
@@ -199,6 +200,10 @@ body {
 /*
 * CV-Section
 */
+.cv-wrapper .section-content {
+  flex-direction: row;
+}
+
 .cv-columns {
 
   width: 50%;
@@ -240,21 +245,67 @@ body {
 
 
 /*
-  * 
+ * Cases
 */
+.wl-cases {
+  height: 100%;
+  gap: 20px;
+}
 
-.about-wrapper .section-content,
-.contact-wrapper .section-content {
+.wl-case {
+  gap: 20px;
+  height: 450px;
+  position: relative;
+}
 
-  flex-direction: column;
+.case-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.img-col {
+  position: relative;
+  width: 65%;
+}
+
+.mobile-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  object-fit: contain;
+}
+
+.case-img {
+  max-height: 100%;
+  width: 100%;
+}
+
+.text-col {
+  width: 33%;
+}
+
+.text-col .info-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 
+
+
+/*
+ * About  
+*/
 
 .about-wrapper h3 {
   font-weight: 500;
   padding-bottom: 10px;
 }
+
+/*
+ * Contact
+*/
 
 .contact-wrapper a {
   color: black;
