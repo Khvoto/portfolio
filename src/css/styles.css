@@ -94,12 +94,14 @@ body {
   gap: 40px;
   height: 70vh;
   justify-content: space-evenly;
+  
 }
 
 .menu .menu-items .menu-item {
   align-content: center;
   justify-content: center;
   width: fit-content;
+  z-index: 10;
 }
 
 .menu-item-text {
@@ -160,6 +162,24 @@ body {
   text-align: center;
 }
 
+/**
+* Overlay layer to enable closing sections while clicking elsewhere than the buttons.
+*/
+
+#overlay {
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+#overlay.active {
+  display: block;
+  z-index: 2;
+}
+
 /* ## Sections ## 
 * Includes styles for all sections as well as specific rules for the following different sections:
 * - CV
@@ -191,6 +211,7 @@ body {
   top: 5%;
   transform: translateX(-50%);
   width: 70%;
+  z-index: 10;
 }
 
 .section-content h2 {
@@ -254,8 +275,10 @@ body {
 
 .wl-case {
   gap: 20px;
-  height: 450px;
+  height: 480px;
   position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .case-container {
