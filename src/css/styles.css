@@ -298,24 +298,47 @@ body {
 }
 
 .img-col {
+  height: 455px;
   position: relative;
   width: 65%;
+  object-fit: contain;
 }
 
-.mobile-img {
+.img-col span {
   position: absolute;
   top: 50%;
-  left: 50%;
-  object-fit: contain;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  background-color:rgba(191, 207, 207, 0.904);
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+.img-col span.left {
+  display: none;
+}
+
+
+
+.shown-img {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow: hidden;
+  justify-content: center;
 }
 
 .case-img {
   max-height: 100%;
-  width: 100%;
+  max-width: 100%;
 }
 
 .text-col {
   width: 33%;
+  position: relative;
 }
 
 .text-col .info-text {

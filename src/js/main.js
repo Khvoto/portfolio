@@ -1,4 +1,6 @@
 import * as section_cv from "./lib/section_cv.js";
+import * as section_case from "./lib/section_case.js";
+
 //import * as cv_class from './lib/cv_class.js'
 
 const collection = document.getElementsByClassName("menu-item"); // Creates an HTMLCollection of menu items
@@ -72,3 +74,4 @@ function overlayClickability() {
 overlayClickability();
 
 section_cv.fillCV();
+section_case.caseFunctions();
