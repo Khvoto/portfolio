@@ -1,268 +1,391 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>byOsterqvist</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>byOsterqvist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <link rel="stylesheet" href="./src/css/styles.css">
+  <body>
+    <div class="wrapper">
+      <!-- ## Start of Header ## -->
 
-
-</head>
-
-<body>
-  <div class="wrapper">
-
-    <!-- ## Start of Header ## -->
-
-    <header>
-      <div class="image-wrapper">
-        <img src="./src/assets/abisko1.jpg" alt="" class="header-image">
-        <div class="image-overlay"></div>
-      </div>
-      <nav class="menu left">
-        <div class="menu-container">
-          <ul class="menu-items">
-            <li class="menu-item">
-              <a id="cv" href="#">
-                <span class="material-symbols-outlined">newspaper</span>
-                <span class="menu-item-text">CV</span>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="#">
-                <span class="material-symbols-outlined">cases</span>
-                <span class="menu-item-text">Case</span>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="#">
-                <span class="material-symbols-outlined">folder_open</span>
-                <span class="menu-item-text">Projekt</span>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="#">
-                <span class="material-symbols-outlined">face</span>
-                <span class="menu-item-text">Om mig</span>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="#">
-                <span class="material-symbols-outlined">contact_page</span>
-                <span class="menu-item-text">Kontakt</span>
-              </a>
-            </li>
-          </ul>
+      <header>
+        <div class="image-wrapper">
+          <img src="./src/assets/abisko1.jpg" alt="" class="header-image" />
+          <div class="image-overlay"></div>
         </div>
-      </nav>
-<!--       <nav class="menu right">
+        <nav class="menu left">
+          <div class="menu-container">
+            <ul class="menu-items">
+              <li class="menu-item">
+                <a id="cv" href="#">
+                  <span class="material-symbols-outlined">newspaper</span>
+                  <span class="menu-item-text">CV</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="material-symbols-outlined">cases</span>
+                  <span class="menu-item-text">Case</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="material-symbols-outlined">folder_open</span>
+                  <span class="menu-item-text">Projekt</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="material-symbols-outlined">face</span>
+                  <span class="menu-item-text">Om mig</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <span class="material-symbols-outlined">contact_page</span>
+                  <span class="menu-item-text">Kontakt</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!--       <nav class="menu right">
         <div class="menu-container">
           <ul>
 
           </ul>
         </div>
       </nav> -->
-      <div id="overlay"></div>
-    </header>
+        <div id="overlay"></div>
+      </header>
 
-    <!-- ## Start of Main ## -->
+      <!-- ## Start of Main ## -->
 
-    <main>
-      <div id="MainText" class="text-container">
-        <h1 class="title">Jens Österqvist</h1>
-        <p>Välkommen till min portfolio</p>
-        <p>Jag brinner för programmering, teknik och naturen.</p>
-      </div>
-
-    </main>
-
-    <!-- ## Start of sections for each part of the page ## -->
-
-    <section id="section0" class="section cv-wrapper">
-      <div class="section-content">
-        <div class="cv-columns">
-          <ul id="cv-work" class="cv-work">
-            <h2>Arbetserfarenheter</h2>
-          </ul>
+      <main>
+        <div id="MainText" class="text-container">
+          <h1 class="title">Jens Österqvist</h1>
+          <p>Välkommen till min portfolio</p>
+          <p>Jag brinner för programmering, teknik och naturen.</p>
+          <p>
+            Denna portfolio är tänkt som en levande sådan, och kommer fylls på
+            med nya projekt med tiden.
+          </p>
         </div>
-        <div class="cv-columns">
-          <div id="cv-studies" class="cv-studies">
-            <h2>Utbildningar</h2>
+      </main>
+
+      <!-- ## Start of sections for each part of the page ## -->
+
+      <section id="section0" class="section cv-wrapper">
+        <div class="section-content">
+          <div class="cv-columns">
+            <ul id="cv-work" class="cv-work">
+              <h2>Arbetserfarenheter</h2>
+            </ul>
+          </div>
+          <div class="cv-columns">
+            <div id="cv-studies" class="cv-studies">
+              <h2>Utbildningar</h2>
+            </div>
           </div>
         </div>
+      </section>
 
-      </div>
-    </section>
-
-    <section id="section1" class="section case-wrapper">
-      <div class="section-content">
-        <h2>Cases</h2>
-        <p>Nedan följer projekt jag varit del av under min tid hos Webblandskapet.</p>
-        <p>Det första tre sidorna är över e-lines, vilka jag sedan återskapat den design vår grafiker tillsammans med kund kommit överens om, primära språk använda är jQuery samt SASS.</p>
-        <ul class="wl-cases">
-          <li class="wl-case">
-            <div class="case-container">
-              <div class="col img-col">
-                <a href="https://shop.malmochokladfabrik.se/">
-                  <img class="case-img desktop-img" src="./src/assets/malmo-desktop.png" alt="Bild på Malmö chokladfabriks återförsäljarsida i desktopmiljö.">
-                </a>
-                <a href="https://shop.malmochokladfabrik.se/">
-                  <img class="case-img mobile-img" src="./src/assets/malmo-mobil.png" alt="Bild på Malmö chokladfabriks återförsäljarsida i mobilmiljö.">
-                </a>
-              </div>
-              <div class="col text-col">
-                <div class="info">
-                  <h3 class="info-header">Malmö Chokladfabrik</h3>
-                  <p class="info-text">Till Malmö Chokladfabrik har många instatser blivit gjorda, jag har fått mobilanpassa deras webshop gentemot återförsäljare, ta fram funktionalitet för att visa ifall en vara är ekologisk, fairtrade eller vegansk,vid inloggad återförsäljade så har funktionalitet för att från produktlistan välja antal varor att lägga i varukorgen. </p>
+      <section id="section1" class="section case-wrapper">
+        <div class="section-content">
+          <h2>Cases</h2>
+          <p>
+            Nedan följer projekt jag varit del av under min tid hos
+            Webblandskapet.
+          </p>
+          <p>
+            Det första tre sidorna är över e-lines, vilka jag sedan återskapat
+            den design vår grafiker tillsammans med kund kommit överens om,
+            primära språk använda är jQuery samt SASS.
+          </p>
+          <ul class="wl-cases">
+            <li class="wl-case">
+              <div class="case-container">
+                <div class="col img-col">
+                  <a href="https://shop.malmochokladfabrik.se/">
+                    <img
+                      class="case-img desktop-img"
+                      src="./src/assets/malmo-desktop.png"
+                      alt="Bild på Malmö chokladfabriks återförsäljarsida i desktopmiljö."
+                    />
+                  </a>
+                  <a href="https://shop.malmochokladfabrik.se/">
+                    <img
+                      class="case-img mobile-img"
+                      src="./src/assets/malmo-mobil.png"
+                      alt="Bild på Malmö chokladfabriks återförsäljarsida i mobilmiljö."
+                    />
+                  </a>
                 </div>
-              </div>
-            </div>
-          </li>
-          <li class="wl-case">
-            <div class="case-container">
-              <div class="col img-col">
-                <a href="https://e-line.fitzpatrick.se/SE/" target="_blank">
-                  <img class="case-img desktop-img" src="/src/assets/fitz-start.png" alt="Fitzpatrick startsida">
-                </a>
-                <a href="https://e-line.fitzpatrick.se/SE/" target="_blank">
-                  <img class="case-img desktop-img" src="/src/assets/fitz-menu.png" alt="Fitzpatrick meny">
-                </a>
-
-              </div>
-              <div class="col text-col">
-                <div class="info">
-                  <h3 class="info-header">Fitzpatrick</h3>
-                  <p class="info-text">Här önskades en total omarbetning av hemsidan. Bland annat en megameny täckandes 3 nivåer med innehåll, samt ett hero-bildspel. </p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="wl-case">
-            <div class="case-container">
-              <div class="col img-col">
-                <a href="">
-                  <img class="case-img desktop-img" src="/src/assets/bra-desktop.png" alt="">
-                </a>
-                <a href="">
-                  <img class="case-img mobile-img" src="/src/assets/bra-mobil.png" alt="">
-                </a>
-              </div>
-              <div class="col text-col">
-                <div class="info">
-                  <h3 class="info-header">Bra Scandinavia</h3>
-                  <div class="info-text">
-                    <p>Bra Scandinavia hade en önskan om att kunna gå ifrån sin tidigare wordpress-sida, till en specialanpassad e-line. De var fortfarande bväldigt nöjda med sin grafiska layout på sin wordpress, så jag fick i uppdrag att återskapa denna till deras nya sida. </p>
-                    <p>Detta löste jag genom att skapa html templates för att efterlikna de wordpress "block" de var vana att arbeta med, och ge dem möjligheten att enkelt kunna fortsätta uppdatera sin sida.</p>
+                <div class="col text-col">
+                  <div class="info">
+                    <h3 class="info-header">Malmö Chokladfabrik</h3>
+                    <p class="info-text">
+                      Till Malmö Chokladfabrik har många instatser blivit
+                      gjorda, jag har fått mobilanpassa deras webshop gentemot
+                      återförsäljare, ta fram funktionalitet för att visa ifall
+                      en vara är ekologisk, fairtrade eller vegansk,vid inloggad
+                      återförsäljade så har funktionalitet för att från
+                      produktlistan välja antal varor att lägga i varukorgen.
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="wl-case">
-            <div class="case-container">
-              <div class="col img-col">
-                <a href="">
-                  <img class="case-img desktop-img" src="/src/assets/sture-start.png" alt="Sturebadets startsida">
-                </a>
-                <a href="">
-                  <img class="case-img desktop-img" src="/src/assets/sture-behandlingar.png" alt="sturebadets behandlingssida">
-                </a>
-                <a href="">
-                  <img class="case-img mobile-img" src="/src/assets/sture-mobil.png" alt="sturebadets mobilsida">
-                </a>
-              </div> 
-              <div class="col text-col">
-                <div class="info">
-                  <h3 class="info-header">Sturebadet</h3>
-                  <div class="info-text">
-                    <p>Sturebadets hemsida är uppbyggt igenom Zoezi, en webplattform specifikt inriktad mot att skapa funktionalba hemsidor åt gym och friskvårdsföretag.</p>
-                    <p>Här jag har byggt webkomponenter för att hantera deras bokningssystem, integration mellan kassa och kundprofil, en separat sida som styr deras digitala skärmar på plats i sina lokaler.</p>
-                    <p>Här får man arbeta med ren html, css och javascript.</p>
+            </li>
+            <li class="wl-case">
+              <div class="case-container">
+                <div class="col img-col">
+                  <a href="https://e-line.fitzpatrick.se/SE/" target="_blank">
+                    <img
+                      class="case-img desktop-img"
+                      src="/src/assets/fitz-start.png"
+                      alt="Fitzpatrick startsida"
+                    />
+                  </a>
+                  <a href="https://e-line.fitzpatrick.se/SE/" target="_blank">
+                    <img
+                      class="case-img desktop-img"
+                      src="/src/assets/fitz-menu.png"
+                      alt="Fitzpatrick meny"
+                    />
+                  </a>
+                </div>
+                <div class="col text-col">
+                  <div class="info">
+                    <h3 class="info-header">Fitzpatrick</h3>
+                    <p class="info-text">
+                      Här önskades en total omarbetning av hemsidan. Bland annat
+                      en megameny täckandes 3 nivåer med innehåll, samt ett
+                      hero-bildspel.
+                    </p>
                   </div>
                 </div>
               </div>
+            </li>
+            <li class="wl-case">
+              <div class="case-container">
+                <div class="col img-col">
+                  <a href="">
+                    <img
+                      class="case-img desktop-img"
+                      src="/src/assets/bra-desktop.png"
+                      alt=""
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      class="case-img mobile-img"
+                      src="/src/assets/bra-mobil.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="col text-col">
+                  <div class="info">
+                    <h3 class="info-header">Bra Scandinavia</h3>
+                    <div class="info-text">
+                      <p>
+                        Bra Scandinavia hade en önskan om att kunna gå ifrån sin
+                        tidigare wordpress-sida, till en specialanpassad e-line.
+                        De var fortfarande bväldigt nöjda med sin grafiska
+                        layout på sin wordpress, så jag fick i uppdrag att
+                        återskapa denna till deras nya sida.
+                      </p>
+                      <p>
+                        Detta löste jag genom att skapa html templates för att
+                        efterlikna de wordpress "block" de var vana att arbeta
+                        med, och ge dem möjligheten att enkelt kunna fortsätta
+                        uppdatera sin sida.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="wl-case">
+              <div class="case-container">
+                <div class="col img-col">
+                  <a href="">
+                    <img
+                      class="case-img desktop-img"
+                      src="/src/assets/sture-start.png"
+                      alt="Sturebadets startsida"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      class="case-img desktop-img"
+                      src="/src/assets/sture-behandlingar.png"
+                      alt="sturebadets behandlingssida"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      class="case-img mobile-img"
+                      src="/src/assets/sture-mobil.png"
+                      alt="sturebadets mobilsida"
+                    />
+                  </a>
+                </div>
+                <div class="col text-col">
+                  <div class="info">
+                    <h3 class="info-header">Sturebadet</h3>
+                    <div class="info-text">
+                      <p>
+                        Sturebadets hemsida är uppbyggt igenom Zoezi, en
+                        webplattform specifikt inriktad mot att skapa
+                        funktionalba hemsidor åt gym och friskvårdsföretag.
+                      </p>
+                      <p>
+                        Här jag har byggt webkomponenter för att hantera deras
+                        bokningssystem, integration mellan kassa och kundprofil,
+                        en separat sida som styr deras digitala skärmar på plats
+                        i sina lokaler.
+                      </p>
+                      <p>
+                        Här får man arbeta med ren html, css och javascript.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="section2" class="section project-wrapper">
+        <div class="section-content">
+          <h2>Projekt</h2>
+          <p>
+            Nedan följer exempel på projekt jag driver framåt på min fritid.
+          </p>
+
+          <ul class="byO-projects">
+            <li class="byO-project">Spelens Hus i Norrköping</li>
+            <li class="byO-project"></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="section3" class="section about-wrapper">
+        <div class="section-content">
+          <div class="about-column">
+            <h2>Om mig</h2>
+            <div class="about-work">
+              <h3>På arbetsplatsen</h3>
+              <p>Jag trivs med att arbeta både i team och på egen hand.</p>
+              <p>
+                Det bästa med att jobba i ett team är att man hjälps åt och tar
+                nytta av varandras styrkor, vilket medför att ett väl
+                genomarbetat team kompletterar varandra väldigt bra och ser till
+                att alla kommer till sin fulla rätt.
+              </p>
+              <p>
+                Att arbeta själv medför andra fördelar, man får följa sin egen
+                struktur och man får en annan helhetsbild över vad man arbetar
+                med, vilket kan leda till en djupare förståelse över alla
+                processer som är en del av arbetet.
+              </p>
             </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="section2" class="section project-wrapper">
-      <div class="section-content">
-        <h2>Projekt</h2>
-        <p>Nedan följer exempel på projekt jag driver framåt på min fritid.</p>
-
-        <ul class="byO-projects">
-          <li class="byO-project">Spelens Hus i Norrköping</li>
-          <li class="byO-project"></li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="section3" class="section about-wrapper">
-      <div class="section-content">
-        <h2>Om mig</h2>
-        <div class="about-work">
-          <h3>På arbetsplatsen</h3>
-          <p>Jag trivs med att arbeta både i team och på egen hand.</p>
-          <p>Det bästa med att jobba i ett team är att man hjälps åt och tar nytta av varandras styrkor, vilket medför att ett väl genomarbetat team kompletterar varandra väldigt bra och ser till att alla kommer till sin fulla rätt.</p>
-          <p>Att arbeta själv medför andra fördelar, man får följa sin egen struktur och man får en annan helhetsbild över vad man arbetar med, vilket kan leda till en djupare förståelse över alla processer som är en del av arbetet.</p>
+            <div class="about-family">
+              <h3>Familj och vänner</h3>
+              <p>
+                Jag bor för tillfället i centrala Norrköping, tillsammans med
+                min fru Vannessa och vår son.
+              </p>
+              <p>
+                Min förlängda familj bor alla i Norrköpings närområde, vilket
+                möjliggör att ses ofta.
+              </p>
+              <p>
+                Jag har genom åren samlat på mig många bekanta runtom i Sverige
+                och Europa, men de jag umgås med finns inom en timmes restid.
+              </p>
+            </div>
+            <div class="about-freetime">
+              <h3>På fritiden</h3>
+              <p>
+                Min fritid består främst av att träffa vänner och familj, men
+                när tid blir över så finns det ett par fritidsintressen som står
+                över alla andra.
+              </p>
+              <p>Dessa är spelhobbykulturen och friluftsliv</p>
+              <h4>Spelhobbyn</h4>
+              <p>
+                Jag är med och driver Spelens Hus i Norrköping, där jag ingår i
+                styrelsen och ansvarar för ekonomin, samt deras hemsida. utöver
+                att vara där och spela någon gång ibland.
+              </p>
+              <h4>Friluftsliv</h4>
+              <p>
+                Att vara ute i skog och mark är ett väldigt stort intresse som
+                jag haft med mig hela livet. Nu för tiden brukar jag försöka
+                komma iväg på en lite större vandring varje sommar.
+              </p>
+              <p>
+                Det är inte omöjligt att man tar sig ut i skogen över en helg
+                ibland heller.
+              </p>
+            </div>
+          </div>
+          <div class="about-column">
+            <img
+              src="/src/assets/jens-i-peru.png"
+              alt="Bild på Jens i de peruanska anderna"
+              class="about-img"
+            />
+          </div>
         </div>
-        <div class="about-family">
-          <h3>Familj och vänner</h3>
-          <p>Jag bor för tillfället i centrala Norrköping, tillsammans med min fru Vannessa.</p>
-          <p>Min förlängda familj bor alla i Norrköpings närområde, vilket möjliggör att ses ofta.</p>
-          <p>Jag har genom åren samlat på mig många bekanta runtom i Sverige och Europa, men de jag umgås med finns inom en timmes restid.</p>
-        </div>
-        <div class="about-freetime">
-          <h3>På fritiden</h3>
-          <p>Min fritid består främst av att träffa vänner och familj, men när tid blir över så finns det ett par fritidsintressen som står över alla andra.</p>
-          <p>Dessa är spelhobbykulturen och friluftsliv</p>
-          <h4>Spelhobbyn</h4>
-          <p>Jag är med och driver Spelens Hus i Norrköping, där jag ingår i styrelsen och ansvarar för ekonomin, samt deras hemsida. utöver att vara där och spela någon gång ibland.</p>
-          <h4>Friluftsliv</h4>
-          <p>Att vara ute i skog och mark är ett väldigt stort intresse som jag haft med mig hela livet. Nu för tiden brukar jag försöka komma iväg på en lite större vandring varje sommar.</p>
-          <p>Det är inte omöjligt att man tar sig ut i skogen över en helg ibland heller.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="section4" class="section contact-wrapper">
-      <div class="section-content">
-        <h2>Kontakt</h2>
-        
-        <p>Enklast nås jag via <a href="mailto:osterqvist@gmail.com">email</a></p>
-        <p>Man kan också försöka ringa <a href="tel:+46768026366">mig</a>, men jag har oftast fokusläge igång, vilket gör att jag inte hör telefonen.</p>
-      </div>
-    </section>
-
-
-    <!-- ## Start of Footer ## -->
-
-    <footer>
-      <div class="footer-container">
-        <div class="footer-area left">
+      <section id="section4" class="section contact-wrapper">
+        <div class="section-content">
+          <h2>Kontakt</h2>
+          <p>
+            Email:
+            <a href="mailto:osterqvist@gmail.com">osterqvist@gmail.com</a>
+          </p>
+          <p>Telefon: <a href="tel:+46768026366"> 0768 02 63 66</a></p>
+          <div class="social">
+            <a
+              href="https://www.linkedin.com/in/jens-%C3%B6sterqvist-8a554a1b0/"
+              >Linkedin</a
+            >
+          </div>
         </div>
-        <div class="footer-area">
-          <div class="social"><a href="#">Linkedin</a></div>
-          <div class="social"><a href="#">X</a></div>
-        </div>
-        <div class="footer-area right">
-          <p class="cc">Produced by: Jens Österqvist </p>
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
-<script type="module" src="./src/js/main.js"></script>
+      </section>
 
+      <!-- ## Start of Footer ## -->
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-area left"></div>
+          <div class="footer-area"></div>
+          <div class="footer-area right">
+            <p class="cc">Produced by: Jens Österqvist</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script type="module" src="./src/js/main.js"></script>
 </html>

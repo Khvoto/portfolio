@@ -25,6 +25,16 @@ h2 {
   font-weight: 500;
 }
 
+h3 {
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+h4 {
+  font-weight: 400;
+  margin-top: 5px;
+}
+
 a {
   color: #dedede;
   text-decoration: none;
@@ -49,7 +59,7 @@ body {
 */
 
 .image-wrapper {
-  height: 95vh;
+  height: 100vh;
   width: 100vw;
   position: relative;
   overflow: hidden
@@ -64,7 +74,7 @@ body {
 
 .image-overlay {
   background-color: rgba(99, 104, 104, 0.4);
-  height: 95vh;
+  height: 100vh;
   position: absolute;
   width: 100vw;
 }
@@ -326,6 +336,25 @@ body {
   padding-bottom: 10px;
 }
 
+.about-wrapper .section-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about-column {
+height: 100%;
+object-fit: contain;
+width: 45%;
+justify-content: space-evenly;
+}
+
+.about-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 /*
  * Contact
 */
@@ -345,16 +374,18 @@ body {
 */
 
 footer {
-  height: 5vh;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer-container {
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: calc(100vw - 40px);
   height: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: end;
+  padding: 0 20px
 }
 
 .footer-area {
