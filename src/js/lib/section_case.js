@@ -1,5 +1,6 @@
 export function caseFunctions() {
   caseImageShifter();
+  alternateCaseLayout();
 }
 
 function caseImageShifter() {
@@ -44,5 +45,15 @@ function caseImageShifter() {
 
       console.log("shown:", shown);
     });
+  });
+}
+
+function alternateCaseLayout() {
+  const cases = Array.from(document.getElementsByClassName("wl-case"));
+  cases.forEach((caseElement, index) => {
+    const container = caseElement.querySelector(".case-container");
+    if (index % 2 === 0) {
+      container.style.flexDirection = "row-reverse";
+    }
   });
 }
