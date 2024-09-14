@@ -319,6 +319,11 @@ body {
 
 .img-col span.left {
   display: none;
+  left: 5px;
+}
+
+.img-col span.right {
+  right: 5px;
 }
 
 
@@ -347,8 +352,14 @@ body {
 }
 
 .text-col .info-header {
-  text-align: center;
   padding: 20px;
+  text-align: center;
+}
+
+.text-col .info-header a {
+  color: black;
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 .text-col .info-text {
