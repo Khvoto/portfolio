@@ -56,7 +56,13 @@ function toggleVisibility() {
 
 function toggleOverlay() {
   const overlay = document.getElementById("overlay");
-  overlay.classList.toggle("active");
+  const open = document.getElementsByClassName("open");
+
+  if (open.length === 1) {
+    overlay.classList.add("active");
+  } else {
+    overlay.classList.remove("active");
+  }
 }
 
 function overlayClickability() {
