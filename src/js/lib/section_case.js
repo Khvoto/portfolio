@@ -11,8 +11,8 @@ function caseImageShifter() {
     const images = caseElement.querySelectorAll(".case-img");
     let shown = 0;
 
-    console.log("shown:", shown);
-    console.log("img:", images);
+    //console.log("shown:", shown);
+    //console.log("img:", images);
 
     left.addEventListener("click", () => {
       // Add code to slide left

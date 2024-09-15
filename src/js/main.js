@@ -1,5 +1,6 @@
 import * as section_cv from "./lib/section_cv.js";
 import * as section_case from "./lib/section_case.js";
+import { backgroundSwapper } from "./lib/background_swapper.js";
 
 //import * as cv_class from './lib/cv_class.js'
 
@@ -78,6 +79,7 @@ function overlayClickability() {
 }
 
 overlayClickability();
+backgroundSwapper();
 
 section_cv.fillCV();
 section_case.caseFunctions();
