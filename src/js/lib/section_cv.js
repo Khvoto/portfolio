@@ -6,11 +6,11 @@
 const prior_experience = [
   {
     id: 0,
-    type: 'work',
-    title: 'Junior Frontendutvecklare',
-    location: 'Webblandskapet - Norrköping',
+    type: "work",
+    title: "Junior Frontendutvecklare",
+    location: "Webblandskapet - Norrköping",
     start: 2023,
-    end: 'current',
+    end: "current",
     description: "Arbetat gentemot kunder med olika projekt, ",
     skills: {
       0: "Javascript",
@@ -24,17 +24,18 @@ const prior_experience = [
       8: "Git",
       9: "Agile dev",
       10: "Eline",
-      11: "Zoezi"
+      11: "Zoezi",
     },
   },
   {
     id: 1,
-    type: 'work',
-    title: 'Personlig Assistent',
-    location: 'Akria Assistans - Norrköping',
+    type: "work",
+    title: "Personlig Assistent",
+    location: "Akria Assistans - Norrköping",
     start: 2022,
-    end: 'current',
-    description: "Hjälper en vän till familjen, numera en förmiddag i veckan, tidigare som enda arbete.",
+    end: "current",
+    description:
+      "Hjälper en vän till familjen, numera en förmiddag i veckan, tidigare som enda arbete.",
     skills: {
       0: "Flexibilitet",
       1: "Ansvarstagande",
@@ -44,12 +45,13 @@ const prior_experience = [
   },
   {
     id: 2,
-    type: 'work',
-    title: 'Personlig Assistent',
-    location: 'Humana AB - Stockholm',
-    start: 2021.02,
-    end: 2021.10,
-    description: "Arbete åt brukare med Autism, var dennes trygga punkt och skulle läsa av situationer som brukaren inte var bekväm i. ",
+    type: "work",
+    title: "Personlig Assistent",
+    location: "Humana AB - Stockholm",
+    start: "2021.02",
+    end: "2021.10",
+    description:
+      "Arbete åt brukare med Autism, var dennes trygga punkt och skulle läsa av situationer som brukaren inte var bekväm i. ",
     skills: {
       0: "Ickeverbal kommunikation",
       1: "Ansvarstagande",
@@ -59,11 +61,11 @@ const prior_experience = [
   },
   {
     id: 3,
-    type: 'studies',
+    type: "studies",
     title: "Webbutvecklare",
     location: "Linnéuniversitetet - Distans",
     start: 2021,
-    end: 'current',
+    end: "current",
     description: "Läser detta program vid sidan av arbete på 25%",
     skills: {
       0: "Javascript",
@@ -73,14 +75,14 @@ const prior_experience = [
       4: "Java",
       5: "Gitlab",
       6: "Docker",
-      7: "Kubernetes"
+      7: "Kubernetes",
     },
   },
   {
     id: 4,
-    type: 'work',
-    title: 'Personlig Assistent',
-    location: 'Liv Ihop - Norrköping',
+    type: "work",
+    title: "Personlig Assistent",
+    location: "Liv Ihop - Norrköping",
     start: 2019,
     end: 2021,
     description: "Hjälpa en vän till familjen, halvtid under denna period",
@@ -93,9 +95,9 @@ const prior_experience = [
   },
   {
     id: 5,
-    type: 'work',
-    title: 'Charkeritekniker',
-    location: 'Charkman - Norrköping',
+    type: "work",
+    title: "Charkeritekniker",
+    location: "Charkman - Norrköping",
     start: 2019.06,
     end: 2019.09,
     description: "Sommarplacering i charkeri",
@@ -108,12 +110,13 @@ const prior_experience = [
   },
   {
     id: 6,
-    type: 'studies',
-    title: 'Fritidslärare',
-    location: 'Linköpings Univeristet - Norrköping',
+    type: "studies",
+    title: "Fritidslärare",
+    location: "Linköpings Univeristet - Norrköping",
     start: 2015,
     end: 2016,
-    description: "Påbörjad utbildning till fritidslärare, avbruten pga. sjukskrivning",
+    description:
+      "Påbörjad utbildning till fritidslärare, avbruten pga. sjukskrivning",
     skills: {
       0: "Pedagogik",
       1: "Didaktik",
@@ -123,14 +126,15 @@ const prior_experience = [
   },
   {
     id: 7,
-    type: 'studies',
-    title: 'Miljövetenskap',
-    location: 'Linköpings Univeristet - Norrköping',
+    type: "studies",
+    title: "Miljövetenskap",
+    location: "Linköpings Univeristet - Norrköping",
     start: 2013,
     end: 2015,
-    description: "Påbörjad utbildning till Miljövetare, avbruten då jag inte såg mig själv i detta område.",
+    description:
+      "Påbörjad utbildning till Miljövetare, avbruten då jag inte såg mig själv i detta område.",
     skills: {
-      0: "Labteknik",
+      0: "Labbteknik",
       1: "Informationssökning",
       2: "Vetenskaplig metodik",
       3: "Kritiskt tänkande",
@@ -138,12 +142,13 @@ const prior_experience = [
   },
   {
     id: 8,
-    type: 'work',
-    title: 'Parkskötare',
-    location: 'PEAB AB - Norrköping',
+    type: "work",
+    title: "Parkskötare",
+    location: "PEAB AB - Norrköping",
     start: 2008,
     end: 2013,
-    description: "Säsongsanställning Start mars, slut oktober/november veroende på säsong. ",
+    description:
+      "Säsongsanställning Start mars, slut oktober/november beroende på säsong. ",
     skills: {
       0: "Renhållning",
       1: "Trädgårdsskötsel",
@@ -153,9 +158,9 @@ const prior_experience = [
   },
   {
     id: 9,
-    type: 'studies',
-    title: 'Naturvetenskap',
-    location: 'Hagagymnasiet - Norrköping',
+    type: "studies",
+    title: "Naturvetenskap",
+    location: "Hagagymnasiet - Norrköping",
     start: 2005,
     end: 2008,
     description: "Gymnasiestudier, Matematik & Data inriktning",
@@ -164,7 +169,7 @@ const prior_experience = [
       2: "Webbdesign",
       3: "Webbproduktion",
       4: "Engelska C",
-      5: "Matematik E"
+      5: "Matematik E",
     },
   },
 ];
@@ -173,74 +178,74 @@ const prior_experience = [
  * Create cards for each experience
  */
 function createCards() {
-  prior_experience.forEach(experience => {
-    const li = document.createElement('li');
-    const target = document.getElementById('cv-'+ experience.type);
-    li.classList.add('cv-position','exp-' + experience.id);
-    target.appendChild(li)
+  prior_experience.forEach((experience) => {
+    const li = document.createElement("li");
+    const target = document.getElementById("cv-" + experience.type);
+    li.classList.add("cv-position", "exp-" + experience.id);
+    target.appendChild(li);
 
-    addFieldsToCards(experience)
+    addFieldsToCards(experience);
   });
 }
 
 function addFieldsToCards(experience) {
-  const current = document.getElementsByClassName('exp-' + experience.id);
+  const current = document.getElementsByClassName("exp-" + experience.id);
   const target = current[0];
-  const skillContainer = document.createElement('div');
-  const title = document.createElement('h3');
-  const location = document.createElement('h4');
-  const duration = document.createElement('p');
-  const description = document.createElement('p');
-  const skills = document.createElement('ul');
-  const li = document.createElement('li');
+  const skillContainer = document.createElement("div");
+  const title = document.createElement("h3");
+  const location = document.createElement("h4");
+  const duration = document.createElement("p");
+  const description = document.createElement("p");
+  const skills = document.createElement("ul");
+  const li = document.createElement("li");
 
-  title.classList.add('cv-title')
+  title.classList.add("cv-title");
   title.innerHTML = experience.title;
   target.appendChild(title);
 
-  location.classList.add('cv-location');
+  location.classList.add("cv-location");
   location.innerHTML = experience.location;
   target.appendChild(location);
 
-  duration.classList.add('cv-duration');
-  duration.innerHTML = experience.start + ' - ' + experience.end;
-  target.appendChild(duration)
+  duration.classList.add("cv-duration");
+  duration.innerHTML = experience.start + " - " + experience.end;
+  target.appendChild(duration);
 
-  description.classList.add('cv-description');
+  description.classList.add("cv-description");
   description.innerHTML = experience.description;
   target.appendChild(description);
 
-  skillContainer.classList.add('cv-skills-container');
-  skillContainer.classList.add('cv-skills-container' + experience.id);
-  target.appendChild(skillContainer)
+  skillContainer.classList.add("cv-skills-container");
+  skillContainer.classList.add("cv-skills-container" + experience.id);
+  target.appendChild(skillContainer);
 
-  const currentSkills = document.getElementsByClassName('cv-skills-container' + experience.id)
-  const skillsContainer = currentSkills[0]
+  const currentSkills = document.getElementsByClassName(
+    "cv-skills-container" + experience.id,
+  );
+  const skillsContainer = currentSkills[0];
 
-  skills.classList.add('cv-skills', 'cv-skills-' + experience.id);
+  skills.classList.add("cv-skills", "cv-skills-" + experience.id);
   skillsContainer.appendChild(skills);
 
-  fillSkills(experience.skills, experience.id)
+  fillSkills(experience.skills, experience.id);
 }
 
 /**
  * Function to populate the skills list for each experience in CV
- * 
+ *
  * @param {object} skills Contains all skills related to specific experience
  * @param {number} id Identifies which experience we're adding skills to
  */
 function fillSkills(skills, id) {
-  const current = document.getElementsByClassName('cv-skills-' + id)
+  const current = document.getElementsByClassName("cv-skills-" + id);
   const target = current[0];
 
-  for( let key in skills  ) {
-    const skill = document.createElement('li')
-    skill.classList.add('cv-skill');
+  for (let key in skills) {
+    const skill = document.createElement("li");
+    skill.classList.add("cv-skill");
     skill.innerHTML = skills[key];
-    target.appendChild(skill)
+    target.appendChild(skill);
   }
-
-  
 }
 
 /**
