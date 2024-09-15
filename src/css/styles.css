@@ -451,12 +451,18 @@ body {
 */
 
 .byO-container {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .byO-project-title {
   margin-bottom: 10px;
   text-align: center;
+}
+
+.byO-img-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .byO-img{
@@ -497,7 +503,7 @@ body {
 }
 
 .about-img {
-  max-height: 100%;
+  max-height: 95%;
   max-width: 100%;
   object-fit: contain;
 }
@@ -505,6 +511,10 @@ body {
 .about-img-text {
   font-size: 0.8rem;
   font-weight: 400;
+  
+  @media (min-width: 1400px) {
+    max-width: 90%;
+  }
 }
 
 /*
