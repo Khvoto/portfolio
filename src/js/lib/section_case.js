@@ -55,6 +55,8 @@ function alternateCaseLayout() {
     if (index % 2 === 0 && window.innerWidth >= 1400) {
       container.style.flexDirection = "row-reverse";
     }
-    if (window.innerWidth < 1400) container.style.flexDirection = "column";
+    if (window.innerWidth < 1400) {
+      container.style.flexDirection = "column";
+    }
   });
 }
