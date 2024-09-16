@@ -77,12 +77,10 @@
 
       <main>
         <div id="MainText" class="text-container">
-          <h1 class="title"><span>Jens Österqvist</span></h1>
-          <p>Välkommen till min portfolio</p>
-          <p>Jag brinner för programmering, teknik och naturen.</p>
-          <p>
-            Denna portfolio är tänkt som en levande sådan, och kommer fyllas på
-            med nya projekt med tiden.
+          <h1 class="title"><span class="accessibility">Jens Österqvist</span></h1>
+          <p><span class="accessibility">Välkommen till min portfolio</span></p>
+          <p><span class="accessibility">Jag brinner för programmering, teknik och naturen.</span></p>
+          <p><span class="accessibility">Denna portfolio är tänkt som en levande sådan, och kommer fyllas på med nya projekt med tiden.</span>
           </p>
         </div>
       </main>
@@ -317,7 +315,7 @@
 
           <ul class="byO-projects">
             <li class="byO-project">
-              <h3 class="byO-project-title"><a href="www.spelenshus011.se">Spelens Hus i Norrköping</a></h3>
+              <h3 class="byO-project-title"><a href="http://www.spelenshus011.se" target="_blank">Spelens Hus i Norrköping</a></h3>
               <div class="byO-container">
                 <div class="byO-img-container">
                   <img
@@ -445,6 +443,7 @@
             href="https://www.linkedin.com/in/jens-%C3%B6sterqvist-8a554a1b0/"
             >Linkedin</a
           >
+          <a href="https://github.com/Khvoto/portfolio" target="_blank">Github Repository</a>
           <div class="social">
           </div>
         </div>
@@ -464,7 +463,12 @@
           </div>
           <div class="footer-area"></div>
           <div class="footer-area right">
-            <p class="cc">Produced by: Jens Österqvist</p>
+            <p class="byO-reglage">Läsbarhetsreglage: </p>
+            <div class="accessability-container">
+              <input type="range" min="0" max="100" value="30" class="accessibility-slider" id="accessibility-slider">
+            </div>
+            
+            <!-- <p class="cc">Produced by: Jens Österqvist</p> -->
           </div>
         </div>
       </footer>

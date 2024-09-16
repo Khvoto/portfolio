@@ -93,12 +93,13 @@ body {
   font-size: 2rem;
   gap: 20px;
   position: absolute;
-  top: 0;
+  top: 0.5rem;
   width: 100vw;
   
   @media (min-width: 1400px) {
     height: 70vh;
     justify-content: center;
+    top: 0;
     width: 200px;
   }
 }
@@ -196,10 +197,14 @@ body {
   position: absolute;
   text-shadow: 2px 0 2px #000, -2px 0 2px #000, 0 2px 2px #000, 0 -2px 2px #000,
   1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
-  top: 42vh;
+  top: 20vh;
   transform: translateX(-50%);
   transition: all 0.3s;
   width: 80vw;
+
+  @media (min-width: 400px) {
+    top: 42vh;
+  }
 
   @media (min-width: 1400px) {
     top: 70vh;
@@ -209,10 +214,14 @@ body {
 
 
 .text-container h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   letter-spacing: 4px;
   padding: 20px 0;
   text-align: center;
+
+  @media (min-width: 1400px) {
+    font-size: 3rem;
+  }
 }
 
 
@@ -221,6 +230,11 @@ body {
   line-height: 1.5;
   padding-top: 10px;
   text-align: center;
+}
+
+.accessibility {
+  background-color:rgba(39, 39, 39, 0.3);
+  line-height: 2;
 }
 
 /**
@@ -247,7 +261,7 @@ body {
 * - Cases
 * - Projects
 * - About me
-* - Contact information
+* - Contact
 */
 
 .section {
@@ -262,19 +276,21 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 85vh;
+  height: 80svh;
   left: 50%;
   padding: 20px;
   position: absolute;
   overflow: auto;
   scrollbar-color: rgba(0,0,0,0.2) transparent;
   scrollbar-width: thin;
-  top: 5%;
+  top: 7vh;
   transform: translateX(-50%);
   width: 80%;
   z-index: 10;
 
   @media (min-width: 1400px) {
+    height: 85vh;
+    top: 5vh;
     width: 70%;
   }
 }
@@ -436,10 +452,12 @@ body {
 }
 
 .text-col {
-  width: 100%;
+  margin-bottom: 20px;
   position: relative;
+  width: 100%;
 
   @media(min-width: 1400px) {
+    margin-bottom: 0;
     width: 33%;
   }
 }
@@ -506,7 +524,7 @@ body {
 
 .about-wrapper .section-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   
   @media(min-width: 1400px) {
@@ -593,6 +611,7 @@ footer {
   gap: 20px;
   position: relative;
   justify-content: center;
+  margin-bottom: 12px;
 }
 
 .byO-background-swapper {
@@ -623,6 +642,7 @@ footer {
   position: relative;
   transition: all 0.3s;
   width: 30px;
+  z-index: 10;
 
   @media(min-width: 1400px) {
     &:hover {
@@ -636,6 +656,39 @@ footer {
 .byO-background-swapper-thumbnail:not(:first-of-type) {
   margin-left: 10px;
 }
+
+.byO-reglage {
+  font-size: 0.7rem;
+  background-color: black;
+  display: none;
+  
+  @media (min-width: 1400px) {
+    display: block;
+  }
+}
+
+.accessibility-contanier {
+  margin-bottom: 12px;
+}
+
+.accessibility-slider{
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1vh;
+  border-radius: 6px;
+  background:rgba(99, 104, 104, 1);
+  border: solid 1px white;
+}
+
+.accessibility-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgb(45, 46, 45);
+  border-radius: 50%;
+  height: 1.3vh;
+  width: 1.3vh;
+}
+
 
 .cc {
   margin-bottom: 12px;
