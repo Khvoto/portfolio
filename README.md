@@ -1,4 +1,4 @@
-Property of Jens Österqvist
+Property of Jens Österqvist,
 Sole author of the code written in this repository.
 
 This is my portfolio repository for private development and viewing only. No external collaborators will be added as this would take away from the idea of it being my portfolio, but anyone is welcome to give feedback and suggestions on new ideas to implement, as this only serves as new inspiration and brings me forward as a developer.
