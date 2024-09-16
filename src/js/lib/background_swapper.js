@@ -3,7 +3,6 @@ export function backgroundSwapper() {
     ".byO-background-swapper-thumbnail",
   );
   const target = document.getElementById("ByO-background");
-  console.log(target);
   const backgroundImages = [
     "/src/assets/abisko1.webp",
     "/src/assets/jotunheimen.webp",
